@@ -7,9 +7,10 @@ gi.require_version("Gtk", "3.0")
 gi.require_version("Gdk", "3.0")
 from gi.repository import Gdk, Gio, GLib, Gtk, Pango
 try:
+    gi.require_version("GLibUnix", "2.0")
     from gi.repository import GLibUnix
     add_unix_signal = GLibUnix.signal_add
-except ImportError:
+except (ImportError, ValueError, AttributeError):
     add_unix_signal = GLib.unix_signal_add
 try:
     if os.environ.get("SIGNAL_RAIL_DISABLE_LAYER_SHELL") == "1":
