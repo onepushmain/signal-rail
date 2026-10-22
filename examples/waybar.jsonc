@@ -1,0 +1,14 @@
+// Merge into your Waybar config; add "bluetooth#signal-rail" to a modules list.
+// Uses ordinary text, so no icon font is required.
+{
+  "bluetooth#signal-rail": {
+    "format": "BT",
+    "format-disabled": "BT off",
+    "format-off": "BT off",
+    "format-connected": "BT {num_connections}",
+    "tooltip-format": "Bluetooth: {status}",
+    "tooltip-format-connected": "{num_connections} connected\n{device_enumerate}",
+    "on-click": "$HOME/.local/bin/signal-rail",
+    "on-click-right": "$HOME/.local/bin/signal-rail"
+  }
+}

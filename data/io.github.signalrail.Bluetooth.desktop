@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Signal rail
+Comment=A Bluetooth panel with adaptive colors
+Exec=signal-rail --show
+Icon=io.github.signalrail.Bluetooth
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=Bluetooth;Wireless;Devices;
+StartupNotify=false

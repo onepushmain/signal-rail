@@ -1,0 +1,38 @@
+window.signal-rail { background-color: transparent; }
+.signal-rail * { font-family: "Noto Sans"; font-size: 12px; color: @fg; -gtk-icon-shadow: none; text-shadow: none; }
+.signal-rail .shell { background-color: transparent; border: 1px solid transparent; border-left: 4px solid transparent; border-radius: 0; padding: 22px; }
+.signal-rail .heading { font-size: 27px; font-weight: 800; letter-spacing: -1px; }
+.signal-rail .muted { color: alpha(@fg, .72); font-size: 11px; }
+.signal-rail .section { color: alpha(@fg, .8); font-family: "Noto Sans Mono"; font-size: 10px; margin-top: 17px; margin-bottom: 8px; }
+.signal-rail button { background-image: none; background-color: transparent; box-shadow: none; border: 1px solid transparent; border-radius: 2px; padding: 7px 10px; min-height: 0; min-width: 0; }
+.signal-rail button:hover { background-color: alpha(@secondary, .28); border-color: @secondary; }
+.signal-rail button:focus { outline: 1px solid @accent; outline-offset: -1px; }
+.signal-rail button:disabled { opacity: .45; }
+.signal-rail .close { font-size: 20px; padding: 0 4px; }
+.signal-rail .device { border-left: 1px solid @secondary; border-bottom: 1px solid alpha(@secondary, .6); padding: 14px 0 14px 12px; }
+.signal-rail .rail-dot { color: @accent; font-size: 15px; }
+.signal-rail .rail-dot.offline { color: @secondary; }
+.signal-rail .device-name { font-weight: 600; font-size: 12px; }
+.signal-rail .device-icon { background-color: alpha(@secondary, .16); border: 1px solid alpha(@secondary, .6); padding: 8px; }
+.signal-rail .battery { color: @accent_text; font-family: "Noto Sans Mono"; font-size: 11px; }
+.signal-rail .badge { font-family: "Noto Sans Mono"; font-size: 10px; padding: 4px 6px; border: 1px solid @secondary; }
+.signal-rail .connected { color: @accent_text; border-color: alpha(@accent, .5); }
+.signal-rail .warning { color: @warning; }
+.signal-rail .action { font-size: 10px; text-decoration-line: underline; padding: 5px 3px; }
+.signal-rail .scan { border: 1px solid @secondary; padding: 12px; color: @accent_text; margin-top: 18px; }
+.signal-rail .primary { background-color: @accent; color: @on_accent; font-weight: 600; }
+.signal-rail .primary:hover { background-color: shade(@accent, .9); }
+.signal-rail .scan label { color: @accent_text; font-family: "Noto Sans Mono"; font-size: 11px; }
+.signal-rail .primary label { color: @on_accent; }
+.signal-rail .close label { font-size: 20px; }
+.signal-rail .action label { font-size: 10px; }
+.signal-rail switch { min-width: 34px; min-height: 18px; background-color: @secondary; border: none; border-radius: 2px; }
+.signal-rail switch:checked { background-color: @accent; }
+.signal-rail switch slider { min-width: 12px; min-height: 12px; margin: 3px; background-color: @bg; background-image: none; border: none; border-radius: 1px; box-shadow: none; }
+.signal-rail .toast { padding: 17px; }
+.signal-rail .toast.warning-shell { border-left-color: transparent; }
+.signal-rail .toast-title { font-weight: 700; font-size: 13px; }
+.signal-rail .prompt { background-color: alpha(@secondary, .2); border: 1px solid @secondary; padding: 14px; margin-top: 14px; }
+.signal-rail entry { background-color: @bg; color: @fg; border: 1px solid @secondary; padding: 7px; }
+.signal-rail scrollbar { background-color: transparent; }
+.signal-rail scrollbar slider { background-color: alpha(@secondary, .6); min-width: 4px; border: none; }
